@@ -1,0 +1,102 @@
+# Enhanced Video Dubbing Automation - Git Ignore File
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PyTorch models and cache
+models/
+*.pth
+*.pt
+*.bin
+.cache/
+
+# Video processing files
+temp/
+output/
+logs/
+checkpoints/
+*.wav
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mp3
+*.flac
+
+# Large files and datasets
+input/
+*.zip
+*.tar.gz
+*.7z
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Kaggle specific
+kaggle_web_client/
+.kaggle/
+
+# Model downloads and cache
+transformers_cache/
+huggingface_cache/
+whisper_cache/
+
+# Temporary processing files
+*_temp.*
+*_intermediate.*
+*_processing.*
+
+# Validation and test outputs
+validation_report.json
+demo_test_*.json
+pipeline_test_*.json
