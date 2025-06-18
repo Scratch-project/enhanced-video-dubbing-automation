@@ -1,0 +1,46 @@
+{
+  "download_info": {
+    "date": "2025-06-17T00:02:14.592802",
+    "success_count": 2,
+    "total_downloads": 3,
+    "success_rate": "66.7%"
+  },
+  "models": {
+    "whisper": {
+      "name": "Whisper large-v3",
+      "path": "models/whisper-large-v3/",
+      "source": "OpenAI",
+      "usage": "Speech recognition and transcription",
+      "size_estimate": "~3GB",
+      "file_pattern": "*.pt"
+    },
+    "seamless": {
+      "name": "SeamlessM4T large",
+      "path": "models/seamlessm4t-large/hf-seamless-m4t-large/",
+      "source": "Meta (Facebook)",
+      "usage": "Multilingual translation and speech",
+      "size_estimate": "~10GB",
+      "model_id": "facebook/hf-seamless-m4t-large"
+    },
+    "openvoice": {
+      "name": "OpenVoice v2",
+      "path": "models/openvoice-library/",
+      "source": "MyShell AI",
+      "usage": "Voice cloning and synthesis",
+      "size_estimate": "~50MB",
+      "repository": "https://github.com/myshell-ai/OpenVoice"
+    }
+  },
+  "usage_instructions": {
+    "whisper": "Use with whisper.load_model('large-v3', download_root='models/whisper-large-v3')",
+    "seamless": "Use with cache_dir='models/seamlessm4t-large/hf-seamless-m4t-large'",
+    "openvoice": "Install with 'pip install -e models/openvoice-library/'"
+  },
+  "total_size_estimate": "~13GB",
+  "notes": [
+    "All models downloaded for video dubbing pipeline",
+    "Use the provided paths in your code to access models",
+    "SeamlessM4T uses HuggingFace cache format",
+    "OpenVoice requires separate checkpoint downloads"
+  ]
+}
